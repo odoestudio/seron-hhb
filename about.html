@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Google</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="https://www.google.com/favicon.ico" type="image/x-icon">
+</head>
+<body class="bg-white dark:bg-[#202124] text-[#202124] dark:text-[#e8eaed] flex flex-col min-h-screen font-sans text-sm">
+
+    <!-- Header -->
+    <header class="flex justify-between items-center p-4 text-sm border-b border-gray-200 dark:border-gray-700">
+        <a href="index.html" class="flex items-center space-x-2">
+             <h1 class="google-logo text-2xl font-light select-none">
+                <span style="color: #4285F4;">G</span><span style="color: #EA4335;">o</span><span style="color: #FBBC05;">o</span><span style="color: #4285F4;">g</span><span style="color: #34A853;">l</span><span style="color: #EA4335;">e</span>
+            </h1>
+            <span class="text-gray-500 dark:text-gray-400 text-lg">About</span>
+        </a>
+        <div class="flex items-center space-x-4">
+            <a href="/products" class="hover:underline">Our products</a>
+            <a href="store.html" class="hover:underline">Store</a>
+            <button id="theme-toggle" class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-gray-100 dark:hover:bg-gray-700">
+                <i class="fa-solid fa-sun text-xl text-yellow-500 block dark:hidden"></i>
+                <i class="fa-solid fa-moon text-xl text-blue-300 hidden dark:block"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow container mx-auto px-6 py-12">
+        <h2 class="text-4xl font-light text-center mb-4">Our mission is to organize the world’s information and make it universally accessible and useful.</h2>
+        <p class="text-lg text-gray-600 dark:text-gray-400 text-center max-w-3xl mx-auto">
+            This is a clone of the Google search interface created for demonstration purposes. It showcases a modern web design using HTML, Tailwind CSS, and vanilla JavaScript, including features like a responsive layout and a dark/light theme switcher.
+        </p>
+        <div class="text-center mt-8">
+             <a href="index.html" class="bg-[#1a73e8] text-white px-8 py-3 rounded-md hover:bg-[#1b66c9] hover:shadow-md transition-all">
+                Back to Search
+            </a>
+        </div>
+    </main>
+
+    <a href="https://seron.dev" target="_blank" class="fixed bottom-4 right-4 bg-blue-600 text-white text-xs px-3 py-1.5 rounded-full shadow-lg hover:bg-blue-700 transition-colors z-50">Made by Seron</a>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
