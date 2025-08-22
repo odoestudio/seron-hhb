@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watching: Building a Modern UI - SeronTube</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-900 font-sans">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md px-4 py-2 flex justify-between items-center sticky top-0 z-40">
+        <div class="flex items-center space-x-4">
+            <a href="index.html" class="text-gray-600 focus:outline-none lg:hidden">
+                 <i class="fas fa-arrow-left text-xl"></i>
+            </a>
+            <a href="index.html" class="flex items-center space-x-2">
+                <i class="fab fa-youtube text-3xl text-red-600"></i>
+                <span class="text-xl font-semibold hidden sm:block">SeronTube</span>
+            </a>
+        </div>
+        <div class="flex-1 flex justify-center px-4">
+            <div class="w-full max-w-2xl flex items-center">
+                <input type="text" placeholder="Search" class="w-full px-4 py-2 border border-gray-300 rounded-l-full focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <button class="bg-gray-200 px-6 py-2 border border-gray-300 border-l-0 rounded-r-full hover:bg-gray-300">
+                    <i class="fas fa-search text-gray-600"></i>
+                </button>
+            </div>
+        </div>
+        <div class="flex items-center space-x-4">
+            <button class="text-gray-600 hover:text-gray-900">
+                <i class="fas fa-video text-xl"></i>
+            </button>
+            <button class="text-gray-600 hover:text-gray-900">
+                <i class="fas fa-bell text-xl"></i>
+            </button>
+            <a href="profile.html">
+                <img src="https://i.pravatar.cc/40?u=seron" alt="User Avatar" class="w-8 h-8 rounded-full">
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="flex flex-col lg:flex-row p-4 lg:p-6 gap-6">
+
+        <!-- Video Player & Details -->
+        <div class="w-full lg:w-2/3">
+            <!-- Video Player -->
+            <div class="aspect-video bg-black rounded-xl overflow-hidden shadow-lg">
+                <!-- In a real app, a video player would be here -->
+                <img src="https://picsum.photos/seed/1/1280/720" class="w-full h-full object-cover" alt="Video Player Placeholder">
+            </div>
+
+            <!-- Video Title -->
+            <h1 class="text-2xl font-bold mt-4">Building a Modern UI with Tailwind CSS</h1>
+
+            <!-- Actions & Channel Info -->
+            <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mt-4 space-y-4 sm:space-y-0">
+                <div class="flex items-center space-x-4">
+                    <a href="profile.html">
+                        <img src="https://i.pravatar.cc/48?u=devchannel" alt="Channel Avatar" class="w-12 h-12 rounded-full">
+                    </a>
+                    <div>
+                        <a href="profile.html" class="font-semibold text-lg">Dev Channel</a>
+                        <p class="text-sm text-gray-600">1.5M subscribers</p>
+                    </div>
+                    <button class="bg-black text-white px-4 py-2 rounded-full font-semibold hover:bg-gray-800">Subscribe</button>
+                </div>
+
+                <div class="flex items-center space-x-2">
+                    <button class="bg-gray-200 px-4 py-2 rounded-full flex items-center space-x-2 hover:bg-gray-300">
+                        <i class="fas fa-thumbs-up"></i>
+                        <span>123K</span>
+                    </button>
+                    <button class="bg-gray-200 px-4 py-2 rounded-full flex items-center space-x-2 hover:bg-gray-300">
+                        <i class="fas fa-thumbs-down"></i>
+                    </button>
+                    <button class="bg-gray-200 px-4 py-2 rounded-full flex items-center space-x-2 hover:bg-gray-300">
+                        <i class="fas fa-share"></i>
+                        <span>Share</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Video Description -->
+            <div class="bg-gray-200 p-4 rounded-xl mt-4">
+                <p class="font-semibold">1.2M views &bull; 2 weeks ago</p>
+                <p class="mt-2">A deep dive into creating beautiful, responsive user interfaces using Tailwind CSS. We cover everything from setup to advanced techniques. #tailwindcss #webdev #ui</p>
+            </div>
+
+            <!-- Comments Section (Placeholder) -->
+            <div class="mt-6">
+                <h2 class="text-xl font-bold">2,458 Comments</h2>
+                <!-- Add comment input -->
+                <div class="flex items-start space-x-3 mt-4">
+                    <img src="https://i.pravatar.cc/40?u=seron" alt="User Avatar" class="w-10 h-10 rounded-full">
+                    <input type="text" placeholder="Add a comment..." class="w-full border-b-2 border-gray-300 bg-transparent focus:outline-none focus:border-black py-1">
+                </div>
+                <!-- Single Comment -->
+                <div class="flex items-start space-x-3 mt-6">
+                    <img src="https://i.pravatar.cc/40?u=commenter1" alt="Commenter Avatar" class="w-10 h-10 rounded-full">
+                    <div>
+                        <div class="flex items-center space-x-2">
+                            <span class="font-semibold text-sm">@user123</span>
+                            <span class="text-xs text-gray-600">2 days ago</span>
+                        </div>
+                        <p>This was incredibly helpful! Finally understood how responsive design works with Tailwind.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Recommended Videos -->
+        <div class="w-full lg:w-1/3 space-y-4">
+            <!-- Recommended Video Card -->
+            <a href="#" class="flex space-x-3 group">
+                <div class="w-40 flex-shrink-0 relative">
+                    <img src="https://picsum.photos/seed/2/400/225" alt="Video Thumbnail" class="w-full rounded-lg">
+                    <span class="absolute bottom-1 right-1 bg-black bg-opacity-75 text-white text-xs px-1 py-0.5 rounded">25:10</span>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-sm leading-tight group-hover:text-blue-600">Exploring the Alps: A 4K Drone Film</h3>
+                    <p class="text-xs text-gray-600">Nature Vids</p>
+                    <p class="text-xs text-gray-600">5M views &bull; 1 month ago</p>
+                </div>
+            </a>
+            <a href="#" class="flex space-x-3 group">
+                <div class="w-40 flex-shrink-0 relative">
+                    <img src="https://picsum.photos/seed/3/400/225" alt="Video Thumbnail" class="w-full rounded-lg">
+                    <span class="absolute bottom-1 right-1 bg-black bg-opacity-75 text-white text-xs px-1 py-0.5 rounded">08:55</span>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-sm leading-tight group-hover:text-blue-600">The Perfect 10-Minute Pasta Recipe</h3>
+                    <p class="text-xs text-gray-600">Chef's Kitchen</p>
+                    <p class="text-xs text-gray-600">890K views &bull; 5 days ago</p>
+                </div>
+            </a>
+            <a href="#" class="flex space-x-3 group">
+                <div class="w-40 flex-shrink-0 relative">
+                    <img src="https://picsum.photos/seed/5/400/225" alt="Video Thumbnail" class="w-full rounded-lg">
+                    <span class="absolute bottom-1 right-1 bg-black bg-opacity-75 text-white text-xs px-1 py-0.5 rounded">15:20</span>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-sm leading-tight group-hover:text-blue-600">The Future of Smartphones in 2024</h3>
+                    <p class="text-xs text-gray-600">Tech Reviews</p>
+                    <p class="text-xs text-gray-600">950K views &bull; 1 week ago</p>
+                </div>
+            </a>
+            <!-- More recommended videos -->
+        </div>
+    </div>
+
+    <a href="https://seron.dev" target="_blank" class="fixed bottom-4 right-4 bg-blue-600 text-white text-xs font-semibold px-3 py-2 rounded-full shadow-lg hover:bg-blue-700 transition-colors z-50">
+        Made by Seron
+    </a>
+
+</body>
+</html>
